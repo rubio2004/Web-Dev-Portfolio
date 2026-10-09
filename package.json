@@ -1,0 +1,22 @@
+{
+  "name": "emmanuel-shopify-portfolio",
+  "version": "1.0.0",
+  "description": "Editable Shopify VA portfolio \u2014 HTML, Tailwind CSS, and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i input.css -o dist/tailwind.css --minify",
+    "watch:css": "tailwindcss -i input.css -o dist/tailwind.css --watch",
+    "format": "prettier --write dist/index.html dist/app.js dist/content.js dist/styles.css input.css package.json",
+    "format:check": "prettier --check dist/index.html dist/app.js dist/content.js dist/styles.css input.css package.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "prettier": "^3.9.9",
+    "simple-icons": "^16.34.0",
+    "tailwindcss": "^4.3.3"
+  }
+}

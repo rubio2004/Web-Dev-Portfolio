@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8faff" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="Emmanuel Rubio — Shopify virtual assistant and web developer. Storefront customization, product management, and custom order workflows."
+    />
+    <title>Emmanuel Rubio | Shopify VA & Web Developer</title>
+    <link rel="icon" type="image/svg+xml" href="images/emmanuel-logo.svg" />
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="ambient-background" aria-hidden="true"></canvas
+    ><a class="skip" href="#main">Skip to content</a>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#" aria-label="Emmanuel Rubio home"
+          ><img
+            src="images/emmanuel-logo.svg"
+            alt="Emmanuel Rubio ER logo"
+            width="64"
+            height="44"
+        /></a>
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="#services">Services</a><a href="#packages">Packages</a
+          ><a href="#work">Projects</a><a href="#about">About</a
+          ><a href="#contact" class="nav-contact">Let’s talk</a>
+        </nav>
+        <button id="menu" aria-label="Toggle navigation" aria-expanded="false">
+          Menu
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="short-line"></span> SHOPIFY & CUSTOM SYSTEM DEVELOPER
+          </p>
+          <h1 class="hero-title">
+            <span>Shopify websites.</span><span>Custom systems.</span
+            ><span class="serif italic">Made simple.</span>
+          </h1>
+          <p id="summary" class="lead"></p>
+          <div class="flex flex-wrap gap-3">
+            <a class="button primary" href="#work">Explore my work</a
+            ><a class="button secondary" href="Emmanuel-Rubio-CV.pdf" download
+              >Download CV</a
+            >
+          </div>
+          <div class="hero-caption">
+            <span>BASED IN THE PHILIPPINES</span><span>BUILT FOR YOUR BUSINESS</span>
+          </div>
+        </div>
+        <figure
+          class="hero-portrait"
+          tabindex="0"
+          aria-label="Emmanuel Rubio portrait. Hover or focus to see Emmanuel wearing a graduation cap."
+        >
+          <div class="hero-confetti" aria-hidden="true"></div>
+          <img
+            class="portrait-default"
+            src="images/emmanuel-portrait.png"
+            alt="Emmanuel Rubio wearing his graduation gown"
+            width="1199"
+            height="1312"
+            fetchpriority="high"
+          /><img
+            class="portrait-hover"
+            src="images/emmanuel-with-cap.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <figcaption>
+            <span class="eyebrow">YOUR SHOPIFY PARTNER</span><span id="hero-name"></span>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="tech-section" aria-labelledby="tech-title">
+        <div class="wrap tech-heading">
+          <div>
+            <p class="eyebrow">MY EVERYDAY TOOLKIT</p>
+            <h2 id="tech-title">Tools I use</h2>
+          </div>
+          <p class="tool-hint" id="tools-hint">Drag or swipe to explore</p>
+        </div>
+        <div
+          class="wrap tech-window"
+          id="tech-window"
+          tabindex="0"
+          aria-label="Tools I use"
+          aria-describedby="tools-hint"
+        >
+          <div id="tech-track" class="tech-track"></div>
+        </div>
+      </section>
+      <section id="services" class="wrap section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / SERVICES</p>
+            <h2>
+              Websites & systems<br /><span class="muted">built for your business.</span>
+            </h2>
+          </div>
+          <p>
+            From custom Shopify storefronts to Laravel business systems, I build solutions
+            around the way you work.
+          </p>
+        </div>
+        <div id="service-grid" class="grid md:grid-cols-2 gap-x-10"></div>
+      </section>
+      <section id="packages" class="package-section">
+        <div class="wrap section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">MONTHLY SHOPIFY VA PACKAGES</p>
+              <h2>
+                Choose the support<br /><span class="serif italic"
+                  >your store needs.</span
+                >
+              </h2>
+            </div>
+            <p>
+              Clear monthly hours and a defined scope. We’ll confirm your priorities
+              before starting.
+            </p>
+          </div>
+          <div id="package-grid" class="package-grid"></div>
+          <p class="package-note">
+            All tasks, meetings, and support fit within the monthly hours. Customer
+            support runs during agreed working hours. Major redesigns, custom API
+            development, paid apps, and Shopify fees are quoted separately. Product limits
+            apply to standard listings with client-provided content.
+          </p>
+        </div>
+      </section>
+      <section id="work" class="work-section">
+        <div class="wrap section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / SELECTED WORK</p>
+              <h2>
+                Projects I’ve<br /><span class="serif italic">built and delivered.</span>
+              </h2>
+            </div>
+            <p>
+              Real projects combining store management, web development, and an
+              understanding of business workflows.
+            </p>
+          </div>
+          <div class="project-navigation">
+            <p id="project-count" aria-live="polite">3 projects</p>
+            <div>
+              <button
+                type="button"
+                id="projects-prev"
+                aria-label="Previous projects"
+                aria-controls="projects"
+              >
+                Previous</button
+              ><button
+                type="button"
+                id="projects-next"
+                aria-label="Next projects"
+                aria-controls="projects"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <div
+            id="projects"
+            class="grid md:grid-cols-2 gap-7"
+            tabindex="0"
+            role="region"
+            aria-label="Selected projects"
+          ></div>
+        </div>
+      </section>
+      <section id="about" class="wrap section about-grid">
+        <div>
+          <p class="eyebrow">03 / A LITTLE ABOUT ME</p>
+          <h2>
+            Meet Emmanuel.<br /><span class="serif italic"
+              >Your development partner.</span
+            >
+          </h2>
+          <p id="about-copy" class="about-copy"></p>
+          <div class="education">
+            <span class="eyebrow">EDUCATION</span>
+            <h3 id="education"></h3>
+            <p id="school"></p>
+          </div>
+        </div>
+        <div class="skill-panel">
+          <p class="eyebrow">MY TOOLKIT</p>
+          <div id="skills" class="flex flex-wrap gap-3"></div>
+          <hr />
+          <p class="eyebrow">HOW I WORK</p>
+          <ol class="process">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Understand your business</h3>
+                <p>Clarify your goals, priorities, and current workflow.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Plan the right support</h3>
+                <p>Agree on a clear scope, deliverables, and timeline.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Build, review, improve</h3>
+                <p>Complete the work and review it with you.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="wrap contact-inner">
+          <div>
+            <p class="eyebrow">LET’S WORK TOGETHER</p>
+            <h2>
+              A website or system in mind?<br /><span class="serif italic"
+                >Let’s build it.</span
+              >
+            </h2>
+            <p>
+              Tell me about your Shopify website, ecommerce project, or custom business
+              system. Share what you need and we’ll discuss the next steps.
+            </p>
+          </div>
+          <form id="inquiry-form" class="inquiry-form">
+            <div>
+              <label for="inquiry-name">Your name</label
+              ><input
+                id="inquiry-name"
+                name="name"
+                autocomplete="name"
+                required
+                maxlength="120"
+                placeholder="Full name"
+              />
+            </div>
+            <div>
+              <label for="inquiry-email">Email address</label
+              ><input
+                id="inquiry-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                maxlength="254"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div>
+              <label for="inquiry-message">Message or inquiry</label
+              ><textarea
+                id="inquiry-message"
+                name="message"
+                rows="5"
+                required
+                maxlength="5000"
+                placeholder="Tell me about your project, goals, and timeline…"
+              ></textarea>
+            </div>
+            <button class="button primary" type="submit">
+              Compose inquiry email <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-note">Opens your email app with your inquiry ready to send.</p>
+            <p id="inquiry-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="portfolio-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <a class="brand" href="#main" aria-label="Emmanuel Rubio home"
+            ><img
+              src="images/emmanuel-logo.svg"
+              alt="Emmanuel Rubio ER logo"
+              width="64"
+              height="44"
+          /></a>
+          <h3>Emmanuel Rubio</h3>
+          <p>Shopify websites, custom business systems, and reliable store support.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a id="email-link"></a><a id="phone-link"></a>
+          <p id="location"></p>
+        </div>
+        <div>
+          <h3>Connect with me</h3>
+          <div id="social-links" class="social-links"></div>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <p>© <span id="year"></span> Emmanuel Rubio. All rights reserved.</p>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+    <dialog id="project-dialog">
+      <button id="close-dialog" aria-label="Close project details">Close</button>
+      <p id="dialog-category" class="eyebrow"></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <a class="button primary" href="#contact" id="dialog-contact"
+        >Discuss a similar project</a
+      >
+    </dialog>
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
